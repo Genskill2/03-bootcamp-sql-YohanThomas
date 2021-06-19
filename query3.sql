@@ -1,1 +1,1 @@
-select b.title from books b,books_subjects s where b.id=s.book and s.subject in (4,8);
+select b.title from books b,books_subjects s where s.book=b.id and (s.subject=4 or s.subject=8);
